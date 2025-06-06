@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Chronicles - Adventure Travel Blog</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-compass-fill me-2"></i>Wanderlust
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adventures">Adventures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn-nav" href="#newsletter">Join Adventure</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-text">
+                    <div class="badge-pill mb-3">
+                        <span>Adventure Awaits</span>
+                    </div>
+                    <h1 class="hero-title">Discover Untold Stories & Hidden Gems</h1>
+                    <p class="hero-subtitle">Extraordinary journeys across breathtaking landscapes and vibrant cultures</p>
+                    <div class="hero-buttons">
+                        <div class="search-container mb-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search destinations..." aria-label="Search destinations">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="bi bi-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                        <div class="destination-tags-container">
+                            <p class="mb-3 text-muted">Popular destinations:</p>
+                            <div class="d-flex flex-wrap justify-content-start gap-2">
+                                <button class="destination-tag" type="button">Thailand</button>
+                                <button class="destination-tag" type="button">Iceland</button>
+                                <button class="destination-tag" type="button">Japan</button>
+                                <button class="destination-tag" type="button">Peru</button>
+                                <button class="destination-tag" type="button">Morocco</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image-container">
+                        <div class="hero-image">
+                            <img src="https://media.istockphoto.com/id/610883992/photo/ushuaia-aerial-view-argentina.jpg?s=1024x1024&w=is&k=20&c=A-kGXfWR16kRzAo5CpeGRHFpm2b_GgGaZe8OciQsRa8=" alt="Mountain Adventure" class="img-fluid">
+                        </div>
+                        <div class="floating-card">
+                            <div class="card-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="card-content">
+                                <h6>Next Destination</h6>
+                                <p>Patagonia, Argentina</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,261.3C960,256,1056,224,1152,197.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+    </section>
+
+    <!-- Featured Adventure -->
+<section class="featured-section py-5" id="adventures">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <span class="section-tag">Latest Journeys</span>
+            <h2 class="section-title">Epic Adventures</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Featured Adventure 1 -->
+            <div class="col-lg-6">
+                <div class="featured-adventure">
+                    <div class="featured-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1661814310068-bd895b7fe5cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="Mountain Adventure">
+                        <div class="image-badge">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Nepal Himalayas
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="adventure-meta mb-3">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3 me-1"></i>Dec 2024
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-clock me-1"></i>14 Days
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Conquering the Annapurna Circuit</h3>
+                        <p class="featured-description">An epic 14-day trek through the heart of the Himalayas, where every sunrise painted the peaks in gold and every step brought new wonders.</p>
+                        <div class="adventure-stats">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">230km</div>
+                                        <div class="stat-label">Distance</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">5,416m</div>
+                                        <div class="stat-label">Max Altitude</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">-15°C</div>
+                                        <div class="stat-label">Min Temp</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Adventure 2 -->
+            <div class="col-lg-6">
+                <div class="featured-adventure">
+                    <div class="featured-image">
+                        <img src="https://media.istockphoto.com/id/935746242/photo/mata-atlantica-atlantic-forest-in-brazil.jpg?s=1024x1024&w=is&k=20&c=ulailuEo5KUCoZdHvG2Pyi5tv34XlVUleT3uxhFIZG0=" class="img-fluid" alt="Amazon Rainforest">
+                        <div class="image-badge">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Amazon, Brazil
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="adventure-meta mb-3">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3 me-1"></i>Nov 2024
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-clock me-1"></i>10 Days
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Deep Amazon Expedition</h3>
+                        <p class="featured-description">Journey into the world's largest rainforest, discovering hidden tribes, exotic wildlife, and the symphony of nature in its purest form.</p>
+                        <div class="adventure-stats">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">180km</div>
+                                        <div class="stat-label">River Travel</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">95%</div>
+                                        <div class="stat-label">Humidity</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">35°C</div>
+                                        <div class="stat-label">Avg Temp</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Adventure 3 -->
+            <div class="col-lg-6">
+                <div class="featured-adventure">
+                    <div class="featured-image">
+                        <img src="https://media.istockphoto.com/id/1360012506/photo/camel-caravan-going-through-the-sahara-desert-in-morocco-at-sunset.jpg?s=1024x1024&w=is&k=20&c=RP1e-_-40xV7J6NnZkoNZ1fDXgM38lCvivfl0x96Puc=" class="img-fluid" alt="Sahara Desert">
+                        <div class="image-badge">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Sahara, Morocco
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="adventure-meta mb-3">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3 me-1"></i>Oct 2024
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-clock me-1"></i>8 Days
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Sahara Desert Crossing</h3>
+                        <p class="featured-description">Camel trekking across endless golden dunes, sleeping under a blanket of stars, and experiencing the timeless magic of the world's largest hot desert.</p>
+                        <div class="adventure-stats">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">120km</div>
+                                        <div class="stat-label">Camel Trek</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">45°C</div>
+                                        <div class="stat-label">Max Temp</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">7</div>
+                                        <div class="stat-label">Desert Nights</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Adventure 4 -->
+            <div class="col-lg-6">
+                <div class="featured-adventure">
+                    <div class="featured-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1664304481949-7342698006f3?q=80&w=1483&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="Antarctica">
+                        <div class="image-badge">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Antarctica
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="adventure-meta mb-3">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3 me-1"></i>Jan 2024
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-clock me-1"></i>12 Days
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Antarctic Wilderness</h3>
+                        <p class="featured-description">Exploring the last frontier on Earth, witnessing massive icebergs, penguin colonies, and the pristine beauty of the world's most remote continent.</p>
+                        <div class="adventure-stats">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">2,500km</div>
+                                        <div class="stat-label">Ship Journey</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">-25°C</div>
+                                        <div class="stat-label">Avg Temp</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">24h</div>
+                                        <div class="stat-label">Daylight</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Adventure 5 -->
+            <div class="col-lg-6">
+                <div class="featured-adventure">
+                    <div class="featured-image">
+                        <img src="https://media.istockphoto.com/id/177363117/photo/tungurahua-volcano-eruption-long-exposure-with-lava.jpg?s=1024x1024&w=is&k=20&c=Z-Qro5we7U56OGERHsrruHT5OzfHwC5v0xG-MAAiP5I=" class="img-fluid" alt="Volcanic Adventure">
+                        <div class="image-badge">
+                            <i class="bi bi-geo-alt-fill me-1"></i>Kamchatka, Russia
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="adventure-meta mb-3">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3 me-1"></i>Sep 2024
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-clock me-1"></i>15 Days
+                            </span>
+                        </div>
+                        <h3 class="featured-title">Land of Fire and Ice</h3>
+                        <p class="featured-description">Helicopter expeditions over active volcanoes, hot springs in pristine wilderness, and encounters with Kamchatka's legendary brown bears.</p>
+                        <div class="adventure-stats">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">30</div>
+                                        <div class="stat-label">Active Volcanoes</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">15</div>
+                                        <div class="stat-label">Bear Sightings</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <div class="stat-value">8</div>
+                                        <div class="stat-label">Helicopter Flights</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary mt-4">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Adventures Grid -->
+    <section class="adventures-grid py-5" id="destinations">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Explore</span>
+                <h2 class="section-title">Recent Adventures</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Stories from around the globe</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Adventure 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1518156959312-07a5380c1261?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Northern Lights Iceland">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Iceland
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Nov 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 7 Days</span>
+                            </div>
+                            <h5 class="card-title">Chasing Aurora in the Land of Fire and Ice</h5>
+                            <p class="card-text">Dancing with the Northern Lights across Iceland's dramatic landscapes, from black sand beaches to glacier lagoons.</p>
+                            <div class="card-tags">
+                                <span class="tag">Photography</span>
+                                <span class="tag">Winter</span>
+                                <span class="tag">Aurora</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/692556208/photo/africa-tanzania-serengeti-zebras-on-the-road-in-serengeti-national-park-in-front-of-the-jeep.jpg?s=1024x1024&w=is&k=20&c=AmNtKbz-qjpoj6MOS_ydiYhCUZyjTsIWcJV80iO3O6w=" alt="African Safari">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Kenya
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Oct 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 10 Days</span>
+                            </div>
+                            <h5 class="card-title">Safari Dreams in the Maasai Mara</h5>
+                            <p class="card-text">Witnessing the Great Migration and sleeping under African stars in one of the world's most spectacular wildlife reserves.</p>
+                            <div class="card-tags">
+                                <span class="tag">Wildlife</span>
+                                <span class="tag">Safari</span>
+                                <span class="tag">Culture</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/1195370326/photo/asian-woman-wearing-japanese-traditional-kimono-and-cherry-blossom-in-spring-japan.jpg?s=1024x1024&w=is&k=20&c=hu6xxVbh2Mb7NjU-5C2bxGoQjJz5rlktD5Uh6ZqZEGI=" alt="Japan Cherry Blossoms">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Japan
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Apr 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 12 Days</span>
+                            </div>
+                            <h5 class="card-title">Sakura Season in Ancient Japan</h5>
+                            <p class="card-text">Following the cherry blossom trail from Tokyo's neon lights to Kyoto's ancient temples during peak sakura season.</p>
+                            <div class="card-tags">
+                                <span class="tag">Culture</span>
+                                <span class="tag">Spring</span>
+                                <span class="tag">Temples</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/484670854/photo/people-observing-mountain-scenery.jpg?s=1024x1024&w=is&k=20&c=IyGwu9x17CXYZzJqBaIYJCQ4g32vsXFvnnSYlwwaSig=" alt="Patagonia Hiking">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Patagonia
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Mar 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 16 Days</span>
+                            </div>
+                            <h5 class="card-title">Wild Winds of Patagonia</h5>
+                            <p class="card-text">Trekking through the untamed wilderness of Torres del Paine, where granite spires pierce the sky and glacial lakes mirror eternity.</p>
+                            <div class="card-tags">
+                                <span class="tag">Hiking</span>
+                                <span class="tag">Wilderness</span>
+                                <span class="tag">Glaciers</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/875478092/photo/the-valley-of-terraced-rice-fields-mu-cang-chai-yen-bai-vietnam.jpg?s=1024x1024&w=is&k=20&c=obRYIiyJ4ciO1-pEsGoSILtFL4BpHcjTicRuOeWZA_8=" alt="Bali Rice Terraces">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Bali
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Feb 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 8 Days</span>
+                            </div>
+                            <h5 class="card-title">Spiritual Journey Through Bali</h5>
+                            <p class="card-text">Discovering inner peace among emerald rice terraces, ancient temples, and the warm hearts of Balinese culture.</p>
+                            <div class="card-tags">
+                                <span class="tag">Spiritual</span>
+                                <span class="tag">Culture</span>
+                                <span class="tag">Tropical</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adventure 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="adventure-card">
+                        <div class="card-image">
+                            <img src="https://media.istockphoto.com/id/1500420309/photo/perfect-reflection-of-the-reine-village-on-the-water-of-the-fjord-in-the-lofoten-islands.jpg?s=1024x1024&w=is&k=20&c=i1-Qc23pE2lr11Q_AWiH2OOUdFybhCIk0l-3SAwVQKQ=" alt="Norwegian Fjords">
+                            <div class="card-location">
+                                <i class="bi bi-geo-alt-fill me-1"></i>Norway
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="adventure-meta">
+                                <span class="date">Jan 2024</span>
+                                <span class="duration"><i class="bi bi-clock"></i> 9 Days</span>
+                            </div>
+                            <h5 class="card-title">Fjords and Northern Lights</h5>
+                            <p class="card-text">Sailing through Norway's majestic fjords in winter, where dramatic cliffs meet frozen waterfalls under dancing auroras.</p>
+                            <div class="card-tags">
+                                <span class="tag">Fjords</span>
+                                <span class="tag">Winter</span>
+                                <span class="tag">Sailing</span>
+                            </div>
+                            <a href="#" class="card-link">
+                                Read Adventure <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline btn-lg" id="loadMoreBtn">
+                    Discover More Adventures
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section py-5" id="gallery">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag">Visual Stories</span>
+                <h2 class="section-title">Adventure Gallery</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Moments captured from around the world</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Gallery Item 1 - Large -->
+                <div class="col-md-6">
+                    <div class="gallery-card h-100">
+                        <div class="gallery-image">
+                            <img src="https://media.istockphoto.com/id/1063275860/photo/nepalese-landscape.jpg?s=1024x1024&w=is&k=20&c=k4QUv2Xv0LYoTWtQPVGvqGh0guaiUW7unm2Ey0Y8dAk=" alt="Mountain Peak" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">
+                                    <h5>Himalayan Sunrise</h5>
+                                    <p>Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="col-md-6">
+                    <div class="row g-4">
+                        <!-- Top Row -->
+                        <div class="col-md-6">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://media.istockphoto.com/id/2190233822/photo/maya-bay-phi-phi-leh-island-krabi-province-thailand.jpg?s=1024x1024&w=is&k=20&c=46lnZOL261wPO2VS09F7i22MXA7CyElbf4cXg86PzEk=" alt="Tropical Beach" class="img-fluid">
+                                    <div class="gallery-overlay">
+                                        <div class="gallery-caption">
+                                            <h5>Hidden Cove</h5>
+                                            <p>Thailand</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://media.istockphoto.com/id/491140187/photo/desert-of-north-africa.jpg?s=1024x1024&w=is&k=20&c=EG9ftKLBzqtTGSLKTm9rYAvRSj-oAlmIErbqtEIPeLQ=" alt="Desert Adventure" class="img-fluid">
+                                    <div class="gallery-overlay">
+                                        <div class="gallery-caption">
+                                            <h5>Sahara Dunes</h5>
+                                            <p>Morocco</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Bottom Row -->
+                        <div class="col-md-6 mt-4">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://plus.unsplash.com/premium_photo-1694475665406-97921c6b712a?q=80&w=1370&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jungle Waterfall" class="img-fluid">
+                                    <div class="gallery-overlay">
+                                        <div class="gallery-caption">
+                                            <h5>Secret Falls</h5>
+                                            <p>Costa Rica</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mt-4">
+                            <div class="gallery-card">
+                                <div class="gallery-image">
+                                    <img src="https://media.istockphoto.com/id/912274822/photo/mt-fuji-and-tokyo-skyline.jpg?s=1024x1024&w=is&k=20&c=h1FIoVs2nU2v9sdJg6Y_Se7asJrb1odV-RoD36BYaIU=" alt="City Skyline" class="img-fluid">
+                                    <div class="gallery-overlay">
+                                        <div class="gallery-caption">
+                                            <h5>Urban Exploration</h5>
+                                            <p>Tokyo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Row Gallery Items -->
+                <div class="col-md-4">
+                    <div class="gallery-card h-100">
+                        <div class="gallery-image">
+                            <img src="https://media.istockphoto.com/id/876779968/photo/pride-of-lions-drinking-at-a-waterhole.jpg?s=1024x1024&w=is&k=20&c=I02SGUsmQBJBsvW-gmHG_bmcMapG7S-lplM5dPzum1U=" alt="Wildlife Safari" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">
+                                    <h5>Lion Pride</h5>
+                                    <p>Tanzania</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="gallery-card h-100">
+                        <div class="gallery-image">
+                            <img src="https://media.istockphoto.com/id/1449429339/photo/northern-lights-and-snowy-mountains-rocky-sea-coast-reflection-in-water-at-night-in-lofoten.jpg?s=1024x1024&w=is&k=20&c=D6xk3FjYYALEmEgLprrAELDhq_zfGrXJoy1Q-usCCDE=" alt="Northern Lights" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">
+                                    <h5>Aurora Magic</h5>
+                                    <p>Iceland</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="gallery-card h-100">
+                        <div class="gallery-image">
+                            <img src="https://media.istockphoto.com/id/930824730/photo/machu-picchu-peru.jpg?s=1024x1024&w=is&k=20&c=PMQ83kth_QyX9fFZYg_u2iwoUc0mu-02QGlaqSlRnoY=" alt="Ancient Ruins" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <div class="gallery-caption">
+                                    <h5>Machu Picchu</h5>
+                                    <p>Peru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline btn-lg">
+                    View Full Gallery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="newsletter-content">
+                            <span class="section-tag">Stay Connected</span>
+                            <h3>Join the Adventure</h3>
+                            <p>Get exclusive travel stories, hidden gems, and adventure tips delivered to your inbox. No spam, just pure wanderlust!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address" id="emailInput">
+                                <button class="btn btn-primary" type="button" id="subscribeBtn">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <small>Join 10,000+ fellow adventurers • Unsubscribe anytime</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <h5>
+                            <i class="bi bi-compass-fill me-2"></i>Wanderlust
+                        </h5>
+                        <p>Hi, I'm Alex! A passionate adventurer sharing stories from the road less traveled. Join me as I explore hidden gems, embrace local cultures, and chase sunrises around the globe.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Pinterest">
+                                <i class="bi bi-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6>Destinations</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Asia Adventures</a></li>
+                        <li><a href="#">European Escapes</a></li>
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">South America</a></li>
+                        <li><a href="#">Hidden Gems</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6>Adventure Types</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Mountain Trekking</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Wildlife Encounters</a></li>
+                        <li><a href="#">Photography Tours</a></li>
+                        <li><a href="#">Solo Travel</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6>Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Travel Guides</a></li>
+                        <li><a href="#">Packing Lists</a></li>
+                        <li><a href="#">Budget Tips</a></li>
+                        <li><a href="#">Gear Reviews</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6>Connect</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Alex</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Collaborate</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 Wanderlust Chronicles. All adventures reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Made with <i class="bi bi-heart-fill"></i> and wanderlust</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
